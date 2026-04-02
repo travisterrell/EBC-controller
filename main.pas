@@ -10,7 +10,7 @@ uses
   TAIntervalSources, TATransformations, TATools, LazSerial,
   DateUtils, TACustomSeries, SynEdit, StepForm, MyIniFile, math, settings,
   typinfo, types, lcltype, connectform, aboutform, ExtCtrls, shortcuthelpform,
-  LCLTranslator, Spin, i18nutils, Controls;
+  LCLTranslator, Spin, i18nutils, Controls, graphcolors;
 
 const
 {$ifdef Windows}
@@ -137,6 +137,16 @@ const
   cAppSec = 'Application';
   cMemStepLogHeight = 'MemStepLogHeight';
   cMemStepLogWidths = 'MemStepLogWidths';
+
+  // Graph color ini keys
+  cGraphColors    = 'GraphColors';
+  cGCBackground   = 'Background';
+  cGCGridLines    = 'GridLines';
+  cGCVoltageAxis  = 'VoltageAxis';
+  cGCCurrentAxis  = 'CurrentAxis';
+  cGCTimeAxis     = 'TimeAxis';
+  cGCVoltageLine  = 'VoltageLine';
+  cGCCurrentLine  = 'CurrentLine';
 
 
 Resourcestring
@@ -355,6 +365,7 @@ type
     mmm_Step: TMenuItem;
     mm_AutoLog: TMenuItem;
     mm_setCsvLogFile: TMenuItem;
+    mm_GraphColors: TMenuItem;
     GraphStepslogPanel: TPanel;
     ChargePannel: TPanel;
     DischargePanel: TPanel;
@@ -421,6 +432,7 @@ type
     procedure mm_savePngClick(Sender: TObject);
     procedure mm_setCsvLogFileClick(Sender: TObject);
     procedure mm_SettingsClick(Sender: TObject);
+    procedure mm_GraphColorsClick(Sender: TObject);
     procedure mm_ShortcutsClick(Sender: TObject);
     procedure mm_stepLoadClick(Sender: TObject);
     procedure mm_taskBarNameClick(Sender: TObject);
@@ -512,6 +524,7 @@ type
     function InterpretPackage(APacket: string; ANow: TDateTime) : boolean;
     procedure DumpSerialData(prefix,postfix: string; snd: string; Pos: Integer);
     procedure SendData(snd: string);
+    procedure ApplyChartColors;
     function EncodeCurrent(Current: Extended): string;
     function EncodePower(Power: Extended): string;
     function DecodeCurrent(Data: string): Extended;
@@ -2003,8 +2016,20 @@ begin
   end;
   setLength(StepLogWidths,0);
 
+  // Load graph colors
+  if not Assigned(frmGraphColors) then
+    frmGraphColors := TfrmGraphColors.Create(Self);
+  frmGraphColors.btnBackground.ButtonColor  := TColor(ini.ReadInteger(cGraphColors, cGCBackground,  Integer(clWhite)));
+  frmGraphColors.btnGridLines.ButtonColor   := TColor(ini.ReadInteger(cGraphColors, cGCGridLines,   Integer(clGray)));
+  frmGraphColors.btnVoltageAxis.ButtonColor := TColor(ini.ReadInteger(cGraphColors, cGCVoltageAxis, Integer(clBlue)));
+  frmGraphColors.btnCurrentAxis.ButtonColor := TColor(ini.ReadInteger(cGraphColors, cGCCurrentAxis, Integer(clRed)));
+  frmGraphColors.btnTimeAxis.ButtonColor    := TColor(ini.ReadInteger(cGraphColors, cGCTimeAxis,    Integer(clDefault)));
+  frmGraphColors.btnVoltageLine.ButtonColor := TColor(ini.ReadInteger(cGraphColors, cGCVoltageLine, Integer(clBlue)));
+  frmGraphColors.btnCurrentLine.ButtonColor := TColor(ini.ReadInteger(cGraphColors, cGCCurrentLine, Integer(clRed)));
+
   ini.Free;
   SetSettings;
+  ApplyChartColors;
   if length(fLanguageCode) > 0 then SetLanguage(fLanguageCode);
 end;
 
@@ -2072,6 +2097,19 @@ begin
     StepLogWidths[i] := memStepLog.Columns[i].Width;
   ini.WriteIntegers(cAppSec, cMemStepLogWidths,StepLogWidths);
   setLength(StepLogWidths, 0);
+
+  // Save graph colors
+  if Assigned(frmGraphColors) then
+  begin
+    ini.WriteInteger(cGraphColors, cGCBackground,  Integer(frmGraphColors.btnBackground.ButtonColor));
+    ini.WriteInteger(cGraphColors, cGCGridLines,   Integer(frmGraphColors.btnGridLines.ButtonColor));
+    ini.WriteInteger(cGraphColors, cGCVoltageAxis, Integer(frmGraphColors.btnVoltageAxis.ButtonColor));
+    ini.WriteInteger(cGraphColors, cGCCurrentAxis, Integer(frmGraphColors.btnCurrentAxis.ButtonColor));
+    ini.WriteInteger(cGraphColors, cGCTimeAxis,    Integer(frmGraphColors.btnTimeAxis.ButtonColor));
+    ini.WriteInteger(cGraphColors, cGCVoltageLine, Integer(frmGraphColors.btnVoltageLine.ButtonColor));
+    ini.WriteInteger(cGraphColors, cGCCurrentLine, Integer(frmGraphColors.btnCurrentLine.ButtonColor));
+  end;
+
   ini.Free;
 end;
 
@@ -2714,10 +2752,64 @@ begin
  // setStatusLine(cst_LogFileName,sdLogCSV.FileName);
 end;
 
+procedure TfrmMain.ApplyChartColors;
+begin
+  if not Assigned(frmGraphColors) then Exit;
+
+  // Background
+  Chart.BackColor := frmGraphColors.btnBackground.ButtonColor;
+  Chart.Color     := frmGraphColors.btnBackground.ButtonColor;
+
+  // Voltage axis (index 0 = left axis)
+  Chart.AxisList[0].Grid.Color            := frmGraphColors.btnGridLines.ButtonColor;
+  Chart.AxisList[0].TickColor             := frmGraphColors.btnVoltageAxis.ButtonColor;
+  Chart.AxisList[0].AxisPen.Color         := frmGraphColors.btnVoltageAxis.ButtonColor;
+  Chart.AxisList[0].Marks.LabelFont.Color := frmGraphColors.btnVoltageAxis.ButtonColor;
+  Chart.AxisList[0].Marks.Frame.Color     := frmGraphColors.btnVoltageAxis.ButtonColor;
+  Chart.AxisList[0].Title.LabelFont.Color := frmGraphColors.btnVoltageAxis.ButtonColor;
+
+  // Time axis (index 1 = bottom axis)
+  Chart.AxisList[1].Grid.Color            := frmGraphColors.btnGridLines.ButtonColor;
+  Chart.AxisList[1].TickColor             := frmGraphColors.btnTimeAxis.ButtonColor;
+  Chart.AxisList[1].AxisPen.Color         := frmGraphColors.btnTimeAxis.ButtonColor;
+  Chart.AxisList[1].Marks.LabelFont.Color := frmGraphColors.btnTimeAxis.ButtonColor;
+  Chart.AxisList[1].Title.LabelFont.Color := frmGraphColors.btnTimeAxis.ButtonColor;
+
+  // Current axis (index 2 = right axis)
+  Chart.AxisList[2].Grid.Color            := frmGraphColors.btnGridLines.ButtonColor;
+  Chart.AxisList[2].TickColor             := frmGraphColors.btnCurrentAxis.ButtonColor;
+  Chart.AxisList[2].AxisPen.Color         := frmGraphColors.btnCurrentAxis.ButtonColor;
+  Chart.AxisList[2].Marks.LabelFont.Color := frmGraphColors.btnCurrentAxis.ButtonColor;
+  Chart.AxisList[2].Title.LabelFont.Color := frmGraphColors.btnCurrentAxis.ButtonColor;
+
+  // Series line colors
+  lsVoltage.LinePen.Color          := frmGraphColors.btnVoltageLine.ButtonColor;
+  lsInvisibleVoltage.LinePen.Color := frmGraphColors.btnBackground.ButtonColor;
+  lsCurrent.LinePen.Color          := frmGraphColors.btnCurrentLine.ButtonColor;
+  lsInvisibleCurrent.LinePen.Color := frmGraphColors.btnBackground.ButtonColor;
+
+  // Status display label colors match line colors
+  stText[cstVoltage].Font.Color := frmGraphColors.btnVoltageLine.ButtonColor;
+  stText[cstCurrent].Font.Color := frmGraphColors.btnCurrentLine.ButtonColor;
+
+  Chart.Invalidate;
+end;
+
 procedure TfrmMain.mm_SettingsClick(Sender: TObject);
 begin
   frmSettings.ShowModal;
   SaveSettings;
+end;
+
+procedure TfrmMain.mm_GraphColorsClick(Sender: TObject);
+begin
+  if not Assigned(frmGraphColors) then
+    frmGraphColors := TfrmGraphColors.Create(Self);
+  if frmGraphColors.ShowModal = mrOk then
+  begin
+    ApplyChartColors;
+    SaveSettings;
+  end;
 end;
 
 procedure TfrmMain.mm_ShortcutsClick(Sender: TObject);

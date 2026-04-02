@@ -3,11 +3,11 @@
   <ProjectSession>
     <Version Value="12"/>
     <BuildModes Active="Win64-Release"/>
-    <Units Count="27">
+    <Units Count="19">
       <Unit0>
         <Filename Value="ebcc.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="8"/>
         <CursorPos Y="22"/>
         <UsageCount Value="205"/>
         <Loaded Value="True"/>
@@ -20,8 +20,7 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="7"/>
-        <TopLine Value="1040"/>
-        <CursorPos X="66" Y="1044"/>
+        <CursorPos X="99" Y="2"/>
         <ExtraEditorCount Value="1"/>
         <ExtraEditor1>
           <EditorIndex Value="-1"/>
@@ -30,14 +29,14 @@
         </ExtraEditor1>
         <UsageCount Value="205"/>
         <Bookmarks Count="8">
-          <Item0 X="25" Y="770"/>
-          <Item1 X="15" Y="2203" ID="5"/>
-          <Item2 X="37" Y="1540" ID="6"/>
-          <Item3 X="3" Y="1705" ID="7"/>
-          <Item4 X="17" Y="2291" ID="8"/>
-          <Item5 Y="2301" ID="4"/>
-          <Item6 X="13" Y="803" ID="9"/>
-          <Item7 X="5" Y="2135" ID="1"/>
+          <Item0 X="25" Y="752"/>
+          <Item1 X="15" Y="2176" ID="5"/>
+          <Item2 X="37" Y="1521" ID="6"/>
+          <Item3 X="3" Y="1686" ID="7"/>
+          <Item4 X="17" Y="2264" ID="8"/>
+          <Item5 Y="2274" ID="4"/>
+          <Item6 X="13" Y="785" ID="9"/>
+          <Item7 X="5" Y="2108" ID="1"/>
         </Bookmarks>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -49,7 +48,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="StepForm"/>
-        <CursorPos Y="7"/>
+        <TopLine Value="548"/>
+        <CursorPos X="17" Y="549"/>
         <ExtraEditorCount Value="1"/>
         <ExtraEditor1>
           <EditorIndex Value="-1"/>
@@ -58,7 +58,7 @@
         </ExtraEditor1>
         <UsageCount Value="267"/>
         <Bookmarks Count="1">
-          <Item0 X="43" Y="152" ID="2"/>
+          <Item0 X="43" Y="151" ID="2"/>
         </Bookmarks>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -70,7 +70,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="44"/>
+        <TopLine Value="53"/>
         <CursorPos X="44" Y="72"/>
         <UsageCount Value="234"/>
         <Loaded Value="True"/>
@@ -82,9 +82,9 @@
         <ComponentName Value="frmConnect"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="16"/>
-        <TopLine Value="35"/>
-        <CursorPos X="5" Y="55"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="104"/>
+        <CursorPos X="62" Y="119"/>
         <UsageCount Value="212"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -96,7 +96,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="aboutForm"/>
-        <EditorIndex Value="15"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="21"/>
         <CursorPos Y="37"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
@@ -108,9 +109,9 @@
         <ComponentName Value="frmShortcuts"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="14"/>
-        <TopLine Value="138"/>
-        <CursorPos X="22" Y="171"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="114"/>
+        <CursorPos X="16" Y="140"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -131,7 +132,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="1"/>
-        <CursorPos Y="7"/>
+        <CursorPos X="19" Y="14"/>
         <UsageCount Value="203"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -139,264 +140,199 @@
       <Unit9>
         <Filename Value="setting.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="79"/>
+        <UsageCount Value="112"/>
       </Unit9>
       <Unit10>
         <Filename Value="MyIniFile.pas"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="107"/>
+        <TopLine Value="118"/>
         <CursorPos X="15" Y="147"/>
         <UsageCount Value="104"/>
         <Loaded Value="True"/>
       </Unit10>
       <Unit11>
+        <Filename Value="ebcc.conf"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="107"/>
+        <CursorPos X="14" Y="136"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit11>
+      <Unit12>
         <Filename Value="/usr/share/lazarus/lcl/include/customcheckgroup.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="299"/>
         <CursorPos Y="316"/>
-        <UsageCount Value="14"/>
-      </Unit11>
-      <Unit12>
+        <UsageCount Value="47"/>
+      </Unit12>
+      <Unit13>
         <Filename Value="/home/ad/öazarus-snap/conf/onlinepackagemanager/packages/LazSerial/lazserial.pas"/>
         <UnitName Value="LazSerial"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="278"/>
         <CursorPos X="5" Y="283"/>
-        <UsageCount Value="11"/>
-      </Unit12>
-      <Unit13>
+        <UsageCount Value="44"/>
+      </Unit13>
+      <Unit14>
         <Filename Value="/home/ad/lazarus-snap/conf/onlinepackagemanager/packages/LazSerial/lazserial.pas"/>
         <UnitName Value="LazSerial"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="124"/>
         <CursorPos X="36" Y="144"/>
-        <UsageCount Value="42"/>
-      </Unit13>
-      <Unit14>
+        <UsageCount Value="75"/>
+      </Unit14>
+      <Unit15>
         <Filename Value="README.md"/>
         <EditorIndex Value="6"/>
+        <TopLine Value="18"/>
         <CursorPos X="6" Y="48"/>
         <UsageCount Value="100"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="None"/>
-      </Unit14>
-      <Unit15>
-        <Filename Value="i18nutils.pas"/>
-        <EditorIndex Value="13"/>
-        <TopLine Value="197"/>
-        <CursorPos X="21" Y="218"/>
-        <UsageCount Value="109"/>
-        <Loaded Value="True"/>
       </Unit15>
       <Unit16>
+        <Filename Value="i18nutils.pas"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="243"/>
+        <CursorPos Y="271"/>
+        <UsageCount Value="109"/>
+        <Loaded Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="/home/ad/lazarus-snap/lazarus/lcl/lcltranslator.pas"/>
+        <UnitName Value="LCLTranslator"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="581"/>
+        <CursorPos Y="610"/>
+        <UsageCount Value="5"/>
+      </Unit17>
+      <Unit18>
         <Filename Value="ebcc.init"/>
         <EditorIndex Value="2"/>
         <UsageCount Value="102"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="None"/>
-      </Unit16>
-      <Unit17>
-        <Filename Value="main.lfm"/>
-        <HasResources Value="True"/>
-        <EditorIndex Value="8"/>
-        <TopLine Value="226"/>
-        <CursorPos Y="244"/>
-        <UsageCount Value="101"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit17>
-      <Unit18>
-        <Filename Value="connectform.lfm"/>
-        <EditorIndex Value="17"/>
-        <UsageCount Value="101"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit18>
-      <Unit19>
-        <Filename Value="settings.lfm"/>
-        <EditorIndex Value="19"/>
-        <TopLine Value="65"/>
-        <CursorPos X="26" Y="82"/>
-        <UsageCount Value="101"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit19>
-      <Unit20>
-        <Filename Value="shortcuthelpform.lfm"/>
-        <EditorIndex Value="20"/>
-        <UsageCount Value="101"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit20>
-      <Unit21>
-        <Filename Value="stepform.lfm"/>
-        <EditorIndex Value="21"/>
-        <TopLine Value="436"/>
-        <CursorPos X="7" Y="456"/>
-        <UsageCount Value="101"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit21>
-      <Unit22>
-        <Filename Value="stepadd_loop.lfm"/>
-        <EditorIndex Value="22"/>
-        <UsageCount Value="101"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit22>
-      <Unit23>
-        <Filename Value="aboutform.lfm"/>
-        <EditorIndex Value="18"/>
-        <TopLine Value="6"/>
-        <UsageCount Value="101"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit23>
-      <Unit24>
-        <Filename Value="../../../../../lazarus/lcl/include/control.inc"/>
-        <EditorIndex Value="12"/>
-        <TopLine Value="4273"/>
-        <CursorPos Y="4293"/>
-        <UsageCount Value="107"/>
-        <Loaded Value="True"/>
-      </Unit24>
-      <Unit25>
-        <Filename Value="../../../../../lazarus/fpc/3.2.2/source/rtl/objpas/fgl.pp"/>
-        <EditorIndex Value="10"/>
-        <TopLine Value="910"/>
-        <CursorPos Y="930"/>
-        <UsageCount Value="10"/>
-        <Loaded Value="True"/>
-      </Unit25>
-      <Unit26>
-        <Filename Value="../../../../../lazarus/components/synedit/synpluginmulticaret.pp"/>
-        <UnitName Value="SynPluginMultiCaret"/>
-        <EditorIndex Value="11"/>
-        <TopLine Value="733"/>
-        <CursorPos X="30" Y="764"/>
-        <UsageCount Value="10"/>
-        <Loaded Value="True"/>
-      </Unit26>
     </Units>
+    <Debugger>
+      <Backend Value="IDE"/>
+    </Debugger>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="stepform.pas"/>
-        <Caret Line="7" Column="11"/>
+        <Filename Value="main.pas"/>
       </Position1>
       <Position2>
-        <Filename Value="stepform.pas"/>
-        <Caret Line="6" Column="22"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="1088" Column="65" TopLine="1064"/>
       </Position2>
       <Position3>
-        <Filename Value="stepform.lfm"/>
-        <Caret Line="456" Column="7" TopLine="436"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="21" Column="19"/>
       </Position3>
       <Position4>
         <Filename Value="main.pas"/>
-        <Caret Line="3218" Column="75" TopLine="3062"/>
+        <Caret Line="1083" Column="81" TopLine="1069"/>
       </Position4>
       <Position5>
         <Filename Value="main.pas"/>
-        <Caret Line="13" Column="43"/>
+        <Caret Line="1070" Column="31" TopLine="1062"/>
       </Position5>
       <Position6>
-        <Filename Value="ebcc.lpr"/>
-        <Caret Line="22"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="501" Column="26" TopLine="488"/>
       </Position6>
       <Position7>
-        <Filename Value="connectform.pas"/>
-        <Caret Line="55" Column="5" TopLine="35"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="806" Column="19" TopLine="804"/>
       </Position7>
       <Position8>
-        <Filename Value="ebcc.lpr"/>
-        <Caret Line="22"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="493" Column="30" TopLine="480"/>
       </Position8>
       <Position9>
-        <Filename Value="settings.lfm"/>
-        <Caret Line="82" Column="26" TopLine="65"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="757" Column="19" TopLine="735"/>
       </Position9>
       <Position10>
-        <Filename Value="ebcc.lpr"/>
-        <Caret Line="16" Column="15"/>
+        <Filename Value="main.pas"/>
       </Position10>
       <Position11>
-        <Filename Value="ebcc.lpr"/>
-        <Caret Line="19" Column="60"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="501" Column="26" TopLine="477"/>
       </Position11>
       <Position12>
-        <Filename Value="ebcc.lpr"/>
-        <Caret Line="22" Column="50"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="851" Column="44" TopLine="827"/>
       </Position12>
       <Position13>
-        <Filename Value="../../../../../lazarus/fpc/3.2.2/source/rtl/objpas/fgl.pp"/>
-        <Caret Line="930" TopLine="910"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="1084" Column="19" TopLine="1072"/>
       </Position13>
       <Position14>
-        <Filename Value="../../../../../lazarus/components/synedit/synpluginmulticaret.pp"/>
-        <Caret Line="764" Column="30" TopLine="733"/>
+        <Filename Value="main.pas"/>
       </Position14>
       <Position15>
-        <Filename Value="ebcc.lpr"/>
-        <Caret Line="22"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="593" Column="14" TopLine="568"/>
       </Position15>
       <Position16>
         <Filename Value="main.pas"/>
-        <Caret Line="325" Column="51" TopLine="317"/>
+        <Caret Line="1117" Column="10" TopLine="1092"/>
       </Position16>
       <Position17>
         <Filename Value="main.pas"/>
-        <Caret Line="1021" Column="112" TopLine="1007"/>
+        <Caret Line="1518" Column="18" TopLine="1494"/>
       </Position17>
       <Position18>
         <Filename Value="main.pas"/>
-        <Caret Line="1032" Column="46" TopLine="1007"/>
+        <Caret Line="2093" Column="16" TopLine="2077"/>
       </Position18>
       <Position19>
         <Filename Value="main.pas"/>
-        <Caret Line="1040" Column="57" TopLine="1011"/>
       </Position19>
       <Position20>
         <Filename Value="main.pas"/>
-        <Caret Line="1044" Column="84" TopLine="1011"/>
+        <Caret Line="455" Column="13" TopLine="431"/>
       </Position20>
       <Position21>
         <Filename Value="main.pas"/>
-        <Caret Line="1019" Column="140" TopLine="1011"/>
+        <Caret Line="456" Column="13" TopLine="432"/>
       </Position21>
       <Position22>
         <Filename Value="main.pas"/>
-        <Caret Line="1032" Column="46" TopLine="1011"/>
+        <Caret Line="458" Column="13" TopLine="434"/>
       </Position22>
       <Position23>
         <Filename Value="main.pas"/>
-        <Caret Line="1021" Column="104" TopLine="1011"/>
+        <Caret Line="895" Column="20" TopLine="871"/>
       </Position23>
       <Position24>
         <Filename Value="main.pas"/>
-        <Caret Line="1044" Column="69" TopLine="1011"/>
+        <Caret Line="896" Column="31" TopLine="872"/>
       </Position24>
       <Position25>
         <Filename Value="main.pas"/>
-        <Caret Line="1019" Column="121" TopLine="1011"/>
+        <Caret Line="1508" Column="18" TopLine="1483"/>
       </Position25>
       <Position26>
         <Filename Value="main.pas"/>
-        <Caret Line="1044" Column="69" TopLine="1011"/>
+        <Caret Line="1510" Column="37" TopLine="1486"/>
       </Position26>
       <Position27>
         <Filename Value="main.pas"/>
-        <Caret Line="1190" Column="75" TopLine="1182"/>
+        <Caret Line="2105" Column="9" TopLine="2078"/>
       </Position27>
       <Position28>
         <Filename Value="main.pas"/>
-        <Caret Line="1043" Column="93" TopLine="1023"/>
+        <Caret Line="2101" Column="58" TopLine="2086"/>
       </Position28>
       <Position29>
         <Filename Value="main.pas"/>
-        <Caret Line="1047" Column="45" TopLine="1023"/>
+        <Caret Line="1082" Column="54" TopLine="1065"/>
       </Position29>
       <Position30>
         <Filename Value="main.pas"/>
+        <Caret Line="2251" Column="96" TopLine="2251"/>
       </Position30>
     </JumpHistory>
     <RunParams>

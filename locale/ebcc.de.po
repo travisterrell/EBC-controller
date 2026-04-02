@@ -493,81 +493,79 @@ msgstr ""
 
 #: tfrmmain.btnadjust.caption
 msgid "Adjust"
-msgstr "Anpassen"
+msgstr ""
 
 #: tfrmmain.btncont.caption
 msgid "Cont"
 msgstr ""
 
 #: tfrmmain.btnprog.caption
+#, fuzzy
 msgctxt "tfrmmain.btnprog.caption"
 msgid "Edit..."
 msgstr "Bearbeiten..."
 
 #: tfrmmain.btnprog.hint
 msgid "Edit the current script, load one or create a new one <F12>"
-msgstr "Bearbeiten des aktuellen Scripts , ein Script laden oder ein neues erstellen <F12>"
+msgstr ""
 
 #: tfrmmain.btnskip.caption
 msgid "Skip step"
-msgstr "Schritt überspringen"
+msgstr ""
 
 #: tfrmmain.btnskip.hint
 msgid "Abort the current step and continue with the next one <F11>"
-msgstr "Aktuellen Schritt überspringen und mit nächstem fortfahren <F11>"
+msgstr ""
 
 #: tfrmmain.btnstart.caption
 msgid "&Start"
-msgstr "&Start"
+msgstr ""
 
 #: tfrmmain.btnstart.hint
-#, fuzzy
-#| msgid "Start charge,discharge or program"
 msgid "Start charge, discharge or program"
-msgstr "Laden, Entladen oder Schritte starten"
+msgstr ""
 
 #: tfrmmain.btnstop.caption
 msgid "St&op"
-msgstr "St&op"
+msgstr ""
 
 #: tfrmmain.caption
 msgid "EBC_controller"
-msgstr "EBC_controller"
+msgstr ""
 
 #: tfrmmain.chart.axislist[0].title.caption
 msgid "[V]"
-msgstr "[V]"
+msgstr ""
 
 #: tfrmmain.chart.axislist[1].title.caption
+#, fuzzy
 msgctxt "tfrmmain.chart.axislist[1].title.caption"
 msgid "Time"
 msgstr "Zeit"
 
 #: tfrmmain.chart.axislist[2].title.caption
 msgid "[A]"
-msgstr "[A]"
+msgstr ""
 
 #: tfrmmain.edtcuta.hint
 msgid "If the charge current will be lower than the cutoff current, charging will be stopped"
-msgstr "Beenden wenn der Ladestrom  den angegebenen Endstrom unterschreitet"
+msgstr ""
 
 #: tfrmmain.edtcutcap.hint
 msgid "End charge/discharge after the specified energy in AH has been put into  or get from the battery"
-msgstr "Laden/Entladen beenden wenn die angegebene Energie in AH erreicht ist"
+msgstr ""
 
 #: tfrmmain.edtcutenergycharge.hint
 msgid "End charge after the specified energy in WH has been put into the battery"
 msgstr ""
 
 #: tfrmmain.edtcutenergydischarge.hint
-#, fuzzy
-msgctxt "tfrmmain.edtcutenergydischarge.hint"
 msgid "End charge/discharge after the specified energy in WH has been put into or get from the battery"
-msgstr "Laden/Entladen beenden wenn die angegebene Energie in WH erreicht ist"
+msgstr ""
 
 #: tfrmmain.edtdelim.text
 msgid "|"
-msgstr "|"
+msgstr ""
 
 #: tfrmmain.gbcontrol.caption
 msgid "Control"
@@ -581,52 +579,47 @@ msgstr "Einstellungen"
 
 #: tfrmmain.gbstatus.caption
 msgid "Status"
-msgstr "Status"
+msgstr ""
 
 #: tfrmmain.label1.caption
 msgid "Current step:"
-msgstr "Aktueller Schritt:"
+msgstr ""
 
 #: tfrmmain.label10.caption
 msgid "after"
-msgstr "nach"
+msgstr ""
 
 #: tfrmmain.label2.caption
 msgid "Log separator"
-msgstr "Trennzeichen"
+msgstr ""
 
 #: tfrmmain.label3.caption
-msgctxt "tfrmmain.label3.caption"
 msgid "Cutoff Voltage"
-msgstr "Endspannung"
+msgstr ""
 
 #: tfrmmain.lblcapi.caption
 msgid "CapI/EneI"
-msgstr "CapI/EneI"
+msgstr ""
 
 #: tfrmmain.lblcells.caption
-#, fuzzy
-#| msgid "Ce&lls"
-msgctxt "tfrmmain.lblcells.caption"
 msgid "Cells"
-msgstr "Ze&llen"
+msgstr ""
 
 #: tfrmmain.lblchargev.caption
-msgctxt "tfrmmain.lblchargev.caption"
 msgid "&Voltage"
-msgstr "S&pannung"
+msgstr ""
 
 #: tfrmmain.lblcuta.caption
 msgid "C&utoff current"
-msgstr "Endstrom"
+msgstr ""
 
 #: tfrmmain.lblcutcap.caption
 msgid "Ah"
-msgstr "AH"
+msgstr ""
 
 #: tfrmmain.lblcutcap2.caption
 msgid "Cutoff Capacity"
-msgstr "Endkapazität"
+msgstr ""
 
 #: tfrmmain.lblcutcap3.caption
 msgid "Cycle Number (starting at)"
@@ -645,23 +638,20 @@ msgid ""
 msgstr ""
 
 #: tfrmmain.lblcutenergydischargeunit.caption
-#, fuzzy
-msgctxt "tfrmmain.lblcutenergydischargeunit.caption"
 msgid "Wh"
-msgstr "WH"
+msgstr ""
 
 #: tfrmmain.lblcutoffv1.caption
 msgid "V"
-msgstr "V"
+msgstr ""
 
 #: tfrmmain.lblcuttime.caption
-msgctxt "tfrmmain.lblcuttime.caption"
 msgid "Max time (min)"
-msgstr "Max Zeit (Min)"
+msgstr ""
 
 #: tfrmmain.lblmin.caption
 msgid "&minutes"
-msgstr "&Minuten"
+msgstr ""
 
 #: tfrmmain.lblprogtime.caption
 msgid "00:00:00"
@@ -669,16 +659,16 @@ msgstr ""
 
 #: tfrmmain.lblstep.caption
 msgid "Testing"
-msgstr "Teste"
+msgstr ""
 
 #: tfrmmain.lblstepnum.caption
 msgctxt "tfrmmain.lblstepnum.caption"
 msgid "0"
-msgstr "-"
+msgstr ""
 
 #: tfrmmain.lbltestunit.caption
 msgid "A"
-msgstr "A"
+msgstr ""
 
 #: tfrmmain.lbltestval.caption
 #, fuzzy
@@ -689,42 +679,39 @@ msgstr "Strom"
 #: tfrmmain.lbltimer.caption
 msgctxt "tfrmmain.lbltimer.caption"
 msgid "0"
-msgstr "-"
+msgstr ""
 
 #: tfrmmain.memsteplog.columns[0].title.caption
 msgid "Step"
-msgstr "Schritt"
+msgstr ""
 
 #: tfrmmain.memsteplog.columns[1].title.caption
 msgid "cmd"
-msgstr "Kommando"
+msgstr ""
 
 #: tfrmmain.memsteplog.columns[2].title.caption
 msgid "AH"
-msgstr "AH"
+msgstr ""
 
 #: tfrmmain.memsteplog.columns[3].title.caption
 msgid "WH"
-msgstr "WH"
+msgstr ""
 
 #: tfrmmain.memsteplog.columns[4].title.caption
-#, fuzzy
-#| msgid "Time"
-msgctxt "tfrmmain.memsteplog.columns[4].title.caption"
 msgid "Duration"
-msgstr "Zeit"
+msgstr ""
 
 #: tfrmmain.memsteplog.columns[5].title.caption
 msgid "Start voltage"
-msgstr "Startspannung"
+msgstr ""
 
 #: tfrmmain.memsteplog.columns[6].title.caption
 msgid "End voltage"
-msgstr "Endspannung"
+msgstr ""
 
 #: tfrmmain.memsteplog.columns[7].title.caption
 msgid "End current"
-msgstr "Endstrom"
+msgstr ""
 
 #: tfrmmain.memsteplog.columns[8].title.caption
 msgid "Start time"
@@ -736,164 +723,164 @@ msgstr ""
 
 #: tfrmmain.mmm_data.caption
 msgid "D&ata"
-msgstr "D&aten"
+msgstr ""
 
 #: tfrmmain.mmm_file.caption
 msgctxt "tfrmmain.mmm_file.caption"
 msgid "&File"
-msgstr "&Datei"
+msgstr ""
 
 #: tfrmmain.mmm_help.caption
 msgid "&Help"
-msgstr "&Hilfe"
+msgstr ""
 
 #: tfrmmain.mmm_language.caption
 msgid "La&nguage"
-msgstr "Sprache"
+msgstr ""
 
 #: tfrmmain.mmm_settings.caption
 msgid "S&ettings"
-msgstr "Einstell&ungen"
+msgstr ""
 
 #: tfrmmain.mmm_step.caption
 msgid "S&teps"
-msgstr "&Schritte"
+msgstr ""
 
 #: tfrmmain.mm_about.caption
 msgid "&About"
-msgstr "&Über ebcc"
+msgstr ""
 
 #: tfrmmain.mm_autocsvfilename.caption
 msgid "Auto CSV &Filename"
-msgstr "Auto CSV Dateiname"
+msgstr ""
 
 #: tfrmmain.mm_autolog.caption
 msgid "&Auto Log"
-msgstr "&Auto Log"
+msgstr ""
 
 #: tfrmmain.mm_autolog.hint
 msgid "Toggle CSV auto log file naming"
-msgstr "Umschalten der automatischen Benennung der CSV-Logdatei"
+msgstr ""
 
 #: tfrmmain.mm_connect.caption
 msgid "&Connect"
-msgstr "&Verbinden"
+msgstr ""
 
 #: tfrmmain.mm_connect.hint
 msgid "Connect to charger"
-msgstr "&Verbinde mit Gerät"
+msgstr ""
 
 #: tfrmmain.mm_disconnect.caption
 msgid "&Disconnect"
-msgstr "&Trennen"
+msgstr ""
 
 #: tfrmmain.mm_disconnect.hint
 msgid "Disconnect from charger"
-msgstr "Verbindung zum Gerät trennen"
+msgstr ""
 
 #: tfrmmain.mm_langenglish.caption
 msgid "English (en)"
-msgstr "Englisch (en)"
+msgstr ""
 
 #: tfrmmain.mm_logfiledir.caption
 msgid "Set CSV log file &directory"
-msgstr "Logdateiverzeichnis einstellen"
+msgstr ""
 
 #: tfrmmain.mm_quit.caption
 msgid "&Quit"
-msgstr "&Beenden"
+msgstr ""
 
 #: tfrmmain.mm_savecsv.caption
 msgid "Save to &CSV"
-msgstr "Speichern als &csv"
+msgstr ""
 
 #: tfrmmain.mm_savepng.caption
 msgid "Save to &png"
-msgstr "Speichern als &png"
+msgstr ""
 
 #: tfrmmain.mm_setcsvlogfile.caption
 msgid "Set CSV log &file"
-msgstr "CSV Logdateinamen einstellen"
+msgstr ""
 
 #: tfrmmain.mm_settings.caption
 msgid "&Settings"
-msgstr "&Einstellungen"
+msgstr ""
 
 #: tfrmmain.mm_settings.hint
 msgid "Open settings"
-msgstr "Einstellungen öffnen"
+msgstr ""
 
 #: tfrmmain.mm_shortcuts.caption
 msgid "&Shortcuts"
-msgstr "Ta&ststaturkürzel"
+msgstr ""
 
 #: tfrmmain.mm_skipstep.caption
 msgid "Skip Step"
-msgstr "&Schritt abbrechen"
+msgstr ""
 
 #: tfrmmain.mm_skipstep.hint
 msgid "Abort the current step and continue with the next one"
-msgstr "Aktuellen Schritt abbrechen und mit nächstem fortfahren"
+msgstr ""
 
 #: tfrmmain.mm_stepedit.caption
 msgid "Edit Stepfile"
-msgstr "Schrittdatei &ändern"
+msgstr ""
 
 #: tfrmmain.mm_stepload.caption
 msgid "Load Stepfile"
-msgstr "Schrittdatei &laden"
+msgstr ""
 
 #: tfrmmain.mm_taskbarname.caption
 msgid "Set Taskbar &Name"
-msgstr "Fenster&überschift setzen"
+msgstr ""
 
 #: tfrmmain.pcprogram.hint
 msgid "Steps: Scripted charge and discharge  cycles"
-msgstr "Schritte: Script für gesteuerte Lade- und Entladezyklen"
+msgstr ""
 
 #: tfrmmain.ststepfile.caption
 msgid "(no file)"
-msgstr "(keine Datei)"
+msgstr ""
 
 #: tfrmmain.tbxmonitor.caption
 msgid "&Monitor"
-msgstr "&Monitor"
+msgstr ""
 
 #: tfrmmain.tbxmonitor.hint
 msgid "Toggle monitor mode, showing current voltage and current while not charging or discharging"
-msgstr "Umschalten Monitor-Mode, Anzeigen aktuelle Spannung/Strom wenn Laden/Entladen nicht aktiv ist"
+msgstr ""
 
 #: tfrmmain.tscharge.caption
 msgid "Charge"
-msgstr "Laden"
+msgstr ""
 
 #: tfrmmain.tscharge.hint
 msgid "Charge - Ctrl F1"
-msgstr "Laden - Strg F1"
+msgstr ""
 
 #: tfrmmain.tsconsole.caption
 msgid "Console"
-msgstr "Konsole"
+msgstr ""
 
 #: tfrmmain.tsconsole.hint
 msgid "Console - Ctrl F4"
-msgstr "Konsole - Strg F4"
+msgstr ""
 
 #: tfrmmain.tsdischarge.caption
 msgid "Discharge"
-msgstr "Entladen"
+msgstr ""
 
 #: tfrmmain.tsdischarge.hint
 msgid "Discharge - Ctrl F2"
-msgstr "Entladen - Strg F2"
+msgstr ""
 
 #: tfrmmain.tsprogram.caption
 msgid "Steps"
-msgstr "Schritte"
+msgstr ""
 
 #: tfrmmain.tsprogram.hint
 msgid "Steps - Ctrl F3"
-msgstr "Schritte - Strg F3"
+msgstr ""
 
 #: tfrmshortcuts.caption
 #, fuzzy
@@ -912,10 +899,9 @@ msgid "Devic&e:"
 msgstr ""
 
 #: tfrmstep.menuitem1.caption
-#, fuzzy
 msgctxt "tfrmstep.menuitem1.caption"
 msgid "&File"
-msgstr "&Datei"
+msgstr ""
 
 #: tfrmstep.menuitem10.caption
 msgid "NiCd"

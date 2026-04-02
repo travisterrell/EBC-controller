@@ -548,7 +548,6 @@ msgid "End charge after the specified energy in WH has been put into the battery
 msgstr ""
 
 #: tfrmmain.edtcutenergydischarge.hint
-msgctxt "tfrmmain.edtcutenergydischarge.hint"
 msgid "End charge/discharge after the specified energy in WH has been put into or get from the battery"
 msgstr ""
 
@@ -582,7 +581,6 @@ msgid "Log separator"
 msgstr ""
 
 #: tfrmmain.label3.caption
-msgctxt "tfrmmain.label3.caption"
 msgid "Cutoff Voltage"
 msgstr ""
 
@@ -591,12 +589,10 @@ msgid "CapI/EneI"
 msgstr ""
 
 #: tfrmmain.lblcells.caption
-msgctxt "tfrmmain.lblcells.caption"
 msgid "Cells"
 msgstr ""
 
 #: tfrmmain.lblchargev.caption
-msgctxt "tfrmmain.lblchargev.caption"
 msgid "&Voltage"
 msgstr ""
 
@@ -629,7 +625,6 @@ msgid ""
 msgstr ""
 
 #: tfrmmain.lblcutenergydischargeunit.caption
-msgctxt "tfrmmain.lblcutenergydischargeunit.caption"
 msgid "Wh"
 msgstr ""
 
@@ -638,7 +633,6 @@ msgid "V"
 msgstr ""
 
 #: tfrmmain.lblcuttime.caption
-msgctxt "tfrmmain.lblcuttime.caption"
 msgid "Max time (min)"
 msgstr ""
 
@@ -690,7 +684,6 @@ msgid "WH"
 msgstr ""
 
 #: tfrmmain.memsteplog.columns[4].title.caption
-msgctxt "tfrmmain.memsteplog.columns[4].title.caption"
 msgid "Duration"
 msgstr ""
 

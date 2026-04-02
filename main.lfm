@@ -1115,6 +1115,11 @@ object frmMain: TfrmMain
         ShortCut = 116
         OnClick = mm_SettingsClick
       end
+      object mm_GraphColors: TMenuItem
+        Caption = '&Graph Colors'
+        Hint = 'Customize graph colors'
+        OnClick = mm_GraphColorsClick
+      end
       object mm_taskBarName: TMenuItem
         Caption = 'Set Taskbar &Name'
         ShortCut = 115
