@@ -764,6 +764,14 @@ msgstr ""
 msgid "Disconnect from charger"
 msgstr ""
 
+#: tfrmmain.mm_graphcolors.caption
+msgid "&Graph Colors"
+msgstr ""
+
+#: tfrmmain.mm_graphcolors.hint
+msgid "Customize graph colors"
+msgstr ""
+
 #: tfrmmain.mm_langenglish.caption
 msgid "English (en)"
 msgstr ""

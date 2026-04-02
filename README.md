@@ -1,5 +1,11 @@
 # EBC-controller
-This is a fork of [EBC-controller](https://github.com/JOGAsoft/EBC-controller) that supports the EBCC A20 and A40 as well.
+This fork adds custom color support for the graph, so you can have a dark mode version for those who \[correctly\] prefer dark colors!
+
+This is a fork of the [mobile-power/EBC-controller] fork, which has more bugfixes from the [ardiehl/EBC-controller] fork which added A20 and A40 support and whose original README is below.
+
+The main file has >3,000 lines, which..._jesus christ_. As if working in the foreign-to-me Delphi/Lazarus wasn't painful enough! (Luckily the latter means we have simple cross platform support.)
+
+This is a fork of [JOGAsoft/EBC-controller](https://github.com/JOGAsoft/EBC-controller) that supports the EBCC A20 and A40 as well.
 among bug fixes additional features and fixes are:
 - parsing and checking of step files
 - syntax highlighting while editing step files

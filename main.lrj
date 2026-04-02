@@ -86,6 +86,8 @@
 {"hash":213561635,"name":"tfrmmain.mmm_settings.caption","sourcebytes":[83,38,101,116,116,105,110,103,115],"value":"S&ettings"},
 {"hash":213577587,"name":"tfrmmain.mm_settings.caption","sourcebytes":[38,83,101,116,116,105,110,103,115],"value":"&Settings"},
 {"hash":181863203,"name":"tfrmmain.mm_settings.hint","sourcebytes":[79,112,101,110,32,115,101,116,116,105,110,103,115],"value":"Open settings"},
+{"hash":244232211,"name":"tfrmmain.mm_graphcolors.caption","sourcebytes":[38,71,114,97,112,104,32,67,111,108,111,114,115],"value":"&Graph Colors"},
+{"hash":187051235,"name":"tfrmmain.mm_graphcolors.hint","sourcebytes":[67,117,115,116,111,109,105,122,101,32,103,114,97,112,104,32,99,111,108,111,114,115],"value":"Customize graph colors"},
 {"hash":251435749,"name":"tfrmmain.mm_taskbarname.caption","sourcebytes":[83,101,116,32,84,97,115,107,98,97,114,32,38,78,97,109,101],"value":"Set Taskbar &Name"},
 {"hash":265940681,"name":"tfrmmain.mm_logfiledir.caption","sourcebytes":[83,101,116,32,67,83,86,32,108,111,103,32,102,105,108,101,32,38,100,105,114,101,99,116,111,114,121],"value":"Set CSV log file &directory"},
 {"hash":223274469,"name":"tfrmmain.mmm_language.caption","sourcebytes":[76,97,38,110,103,117,97,103,101],"value":"La&nguage"},

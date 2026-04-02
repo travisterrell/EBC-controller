@@ -9,10 +9,10 @@ object frmMain: TfrmMain
   ClientWidth = 1723
   KeyPreview = True
   Menu = MainMenu
+  LCLVersion = '4.6.0.0'
   OnClose = FormClose
   OnCreate = FormCreate
   OnKeyDown = FormKeyDown
-  LCLVersion = '3.6.0.0'
   object MainStatusBar: TStatusBar
     Left = 0
     Height = 23
@@ -269,9 +269,9 @@ object frmMain: TfrmMain
           Caption = 'Charge'
           ClientHeight = 147
           ClientWidth = 282
-          OnEnter = tsChargeEnter
           ParentShowHint = False
           ShowHint = True
+          OnEnter = tsChargeEnter
           object rgCharge: TRadioGroup
             Left = 0
             Height = 27
@@ -295,8 +295,8 @@ object frmMain: TfrmMain
               'PbAc - Lead Acid'
               'CCCV - CC and CV charging'
             )
-            OnClick = rgChargeClick
             TabOrder = 0
+            OnClick = rgChargeClick
           end
           object ChargePannel: TPanel
             Left = 0
@@ -341,13 +341,13 @@ object frmMain: TfrmMain
               Height = 23
               Top = 20
               Width = 91
+              TabOrder = 0
               OnChange = edtCellsChange
               OnClick = edtCellsClick
               OnEditingDone = edtCellsEditingDone
               OnExit = edtCellsExit
               OnKeyDown = edtCellsKeyDown
               OnKeyUp = edtCellsKeyUp
-              TabOrder = 0
             end
             object edtChargeV: TFloatSpinEdit
               Left = 146
@@ -399,9 +399,9 @@ object frmMain: TfrmMain
           Caption = 'Discharge'
           ClientHeight = 147
           ClientWidth = 282
-          OnEnter = tsDischargeEnter
           ParentShowHint = False
           ShowHint = True
+          OnEnter = tsDischargeEnter
           object rgDischarge: TRadioGroup
             Left = 0
             Height = 76
@@ -423,8 +423,8 @@ object frmMain: TfrmMain
               'CP - Constant Power'
               'CR - Constant Resistance(SW)'
             )
-            OnClick = rgDischargeClick
             TabOrder = 0
+            OnClick = rgDischargeClick
           end
           object DischargePanel: TPanel
             Left = 0
@@ -472,9 +472,9 @@ object frmMain: TfrmMain
           Caption = 'Steps'
           ClientHeight = 147
           ClientWidth = 282
-          OnContextPopup = tsProgramContextPopup
           ParentShowHint = False
           ShowHint = True
+          OnContextPopup = tsProgramContextPopup
           object Label1: TLabel
             Left = 8
             Height = 15
@@ -601,11 +601,11 @@ object frmMain: TfrmMain
             Top = 216
             Width = 92
             MinValue = 1
-            OnChange = edtCycleStartNumberChange
             ParentShowHint = False
             ShowHint = True
             TabOrder = 4
             Value = 1
+            OnChange = edtCycleStartNumberChange
           end
         end
         object tsConsole: TTabSheet
@@ -701,10 +701,10 @@ object frmMain: TfrmMain
         Height = 23
         Top = 18
         Width = 109
-        OnChange = edtCutTimeChange
         ParentShowHint = False
         ShowHint = True
         TabOrder = 1
+        OnChange = edtCutTimeChange
       end
       object lblCutEnergyDischarge: TLabel
         Left = 11
@@ -761,10 +761,10 @@ object frmMain: TfrmMain
         Top = 85
         Width = 109
         Anchors = [akTop]
-        OnChange = edtCutCapChange
         ParentShowHint = False
         ShowHint = True
         TabOrder = 5
+        OnChange = edtCutCapChange
       end
       object lblCutCap: TLabel
         Left = 255
